@@ -27,4 +27,13 @@ class City(Country):
         self.city_name=city_name
 
      def number_of_schools (self) :
-         print "Nairobi"      
+         print "Nairobi"
+
+   #Implementing polymophis ...The Country class share the opinion method with the city class test
+
+     def opinion(self):
+        print "I love %s" %(self.city_name)
+
+if __name__ == '__main__':
+      kenya = Country("EastAfrica", "Kenya", "English")
+               
