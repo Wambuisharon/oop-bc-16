@@ -1,4 +1,6 @@
 class Country(object):
+    """implementing encapsulation"""
+    __number_of_HIV_infected_children = 0
    
     def __init__(self, name, region, official_language):
         self.name = name
@@ -13,6 +15,9 @@ class Country(object):
 
     def opinion(self): 
         print "I love %s" %(self.name)
+
+    def set_infected_chilren(self, num):
+        self.__number_of_HIV_infected_children = num
 
   #implementing inheritance,city is inheriting from country
 
@@ -29,11 +34,10 @@ class City(Country):
      def number_of_schools (self) :
          print "Nairobi"
 
-   #Implementing polymophis ...The Country class share the opinion method with the city class test
+   #Implementing polymorphism ...The Country class share the opinion method with the city class test
 
      def opinion(self):
         print "I love %s" %(self.city_name)
 
 if __name__ == '__main__':
       kenya = Country("EastAfrica", "Kenya", "English")
-               
