@@ -13,3 +13,18 @@ class Country(object):
 
     def opinion(self): 
         print "I love %s" %(self.name)
+
+  #implementing inheritance,city is inheriting from country
+
+class City(Country):
+    
+     def __init__(self,city_name,recreation_centre, number_of_schools):
+        self.name = name
+        self.region = region
+        self.official_language=official_language
+        self.recreation_centre=recreation_centre
+        self.number_of_schools=number_of_schools
+        self.city_name=city_name
+
+     def number_of_schools (self) :
+         print "Nairobi"      
